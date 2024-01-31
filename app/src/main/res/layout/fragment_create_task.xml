@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <EditText
+        android:id="@+id/editTextTaskName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Nom de la tâche" />
+
+    <EditText
+        android:id="@+id/editTextTaskDescription"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Description" />
+
+    <EditText
+        android:id="@+id/editTextTaskPriority"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Priorité (1-5)"
+        android:inputType="number" />
+
+    <DatePicker
+        android:id="@+id/datePickerDueDate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <RadioGroup
+        android:id="@+id/radioGroupStatus"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <RadioButton
+            android:id="@+id/radioButtonToDo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="À faire" />
+        <RadioButton
+            android:id="@+id/radioButtonDone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Fini" />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/buttonSaveTask"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sauvegarder" />
+</LinearLayout>

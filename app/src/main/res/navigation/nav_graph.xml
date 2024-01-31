@@ -1,0 +1,50 @@
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/homeFragment">
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.example.myapplication.ui.fragment.HomeFragment"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home">
+        <action
+            android:id="@+id/action_homeFragment_to_createTaskFragment"
+            app:destination="@id/createTaskFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_editTaskFragment"
+            app:destination="@id/editTaskFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_deleteTaskFragment"
+            app:destination="@id/deleteTaskFragment" />
+    </fragment>
+
+    <fragment android:id="@+id/createTaskFragment"
+        android:name="com.example.myapplication.ui.fragment.CreateTaskFragment"
+        android:label="fragment_create_task"
+        tools:layout="@layout/fragment_create_task">
+    <action
+        android:id="@+id/action_createTaskFragment_to_homeFragment"
+        app:destination="@id/homeFragment" />
+</fragment>
+
+    <fragment android:id="@+id/deleteTaskFragment"
+        android:name="com.example.myapplication.ui.fragment.DeleteTaskFragment"
+        android:label="fragment_delete_task"
+        tools:layout="@layout/fragment_delete_task">
+        <action
+            android:id="@+id/action_deleteTaskFragment_to_homeFragment"
+            app:destination="@id/homeFragment" />
+    </fragment>
+
+    <fragment android:id="@+id/EditTaskFragment"
+        android:name="com.example.myapplication.ui.fragment.EditTaskFragment"
+        android:label="fragment_edit_task"
+        tools:layout="@layout/fragment_edit_task">
+        <action
+            android:id="@+id/action_editTaskFragment_to_homeFragment"
+            app:destination="@id/homeFragment" />
+    </fragment>
+
+</navigation>

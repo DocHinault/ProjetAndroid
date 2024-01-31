@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="8dp">
+
+    <TextView
+        android:id="@+id/textViewTaskTitle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:textSize="18sp"
+        android:text="Titre de la Tâche" />
+
+    <!-- Ajoutez d'autres TextViews ou vues pour afficher les détails de la tâche, par exemple la priorité ou la date butoir. -->
+
+    <!-- Vous pouvez également ajouter des boutons pour des actions comme la modification ou la suppression. -->
+
+</LinearLayout>

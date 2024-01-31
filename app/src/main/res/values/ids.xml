@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="createTaskFragment" type="id" />
+    <item name="editTaskFragment" type="id" />
+    <item name="deleteTaskFragment" type="id" />
+</resources>

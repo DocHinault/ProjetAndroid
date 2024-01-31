@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!-- Titre de l'application -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/mon_application_de_gestion_de_t_che"
+        android:textSize="24sp"
+        android:textColor="#FF0000"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:padding="8dp" />
+
+    <!-- Sous-titre pour la liste des tâches -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/liste_des_t_ches"
+        android:textSize="18sp"
+        android:padding="8dp" />
+
+    <!-- Spinner pour le filtrage des tâches -->
+    <Spinner
+        android:id="@+id/spinnerFilter"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="8dp" />
+
+    <!-- RecyclerView pour afficher la liste des tâches -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerViewTasks"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:padding="4dp" />
+
+    <!-- Bouton pour ajouter une tâche -->
+    <Button
+        android:id="@+id/buttonAddTask"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Ajouter une tâche"
+        android:padding="8dp" />
+
+    <!-- Bouton pour modifier une tâche -->
+    <Button
+        android:id="@+id/buttonEditTask"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Modifier une tâche"
+        android:padding="8dp" />
+
+    <!-- Bouton pour supprimer une tâche -->
+    <Button
+        android:id="@+id/buttonDeleteTask"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Supprimer une tâche"
+        android:padding="8dp" />
+</LinearLayout>

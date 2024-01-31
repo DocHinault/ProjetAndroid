@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+        <RadioGroup
+            android:id="@+id/radioGroupEditTasks"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <!-- Dynamiquement ajouter des RadioButtons ici pour chaque tâche existante -->
+        </RadioGroup>
+    </ScrollView>
+
+    <Button
+        android:id="@+id/buttonEditTask"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Modifier la tâche sélectionnée" />
+</LinearLayout>

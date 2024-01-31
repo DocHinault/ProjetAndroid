@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">My Application</string>
+    <string name="add_task">Ajouter une Tâche</string>
+    <string name="mon_application_de_gestion_de_t_che">Mon application de gestion de tâche</string>
+    <string name="liste_des_t_ches">Liste des tâches</string>
+    <string name="nom_de_la_t_che">Nom de la tâche</string>
+    <string name="description">Description</string>
+    <string name="priorit_1_5">Priorité (1-5)</string>
+    <string name="faire">À faire</string>
+    <string name="fini">Fini</string>
+    <string name="sauvegarder">Sauvegarder</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+</resources>
