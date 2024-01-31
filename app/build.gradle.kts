@@ -2,8 +2,6 @@ plugins {
     id("com.android.application")
     id("org.jetbrains.kotlin.android")
     id("com.google.devtools.ksp") version "1.9.21-1.0.15"
-    id("com.android.library")
-    id("kotlin-android")
 }
 
 android {
@@ -62,12 +60,6 @@ dependencies {
     implementation("androidx.room:room-runtime:2.6.1")
     implementation("androidx.room:room-ktx:2.6.1")
     implementation("com.google.devtools.ksp:symbol-processing-api:1.9.21-1.0.15")
-    implementation(kotlin("stdlib-jdk8"))
-    // Assurez-vous que le module test-processor est correctement configuré
-    implementation(project(":test-processor"))
-
-    // Utilisation de KSP avec test-processor si nécessaire
-    ksp(project(":test-processor"))
     ksp("androidx.room:room-compiler:2.6.1")
 
 }
